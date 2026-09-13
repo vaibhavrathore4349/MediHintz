@@ -40,3 +40,13 @@ header{height:68px;max-width:1160px;margin:auto;padding:0 24px;display:flex;alig
 /* Keep the Google sign-up control compact and aligned. */
 .google-button { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 13px; }
 .google-button img { width: 18px; height: 18px; flex: 0 0 18px; object-fit: contain; }
+
+/* Phone-number and OTP authentication controls. */
+.phone-row, .otp-row { display: flex; align-items: center; width: 100%; }
+.phone-row { overflow: hidden; border: 1px solid #d5dfdb; border-radius: 6px; background: #fff; }
+.phone-row .country-code { padding: 0 11px; color: #52605b; font-size: 13px; line-height: 38px; border-right: 1px solid #d5dfdb; }
+.input-group .phone-row input { height: 38px; border: 0; border-radius: 0; padding-left: 10px; }
+.input-group .phone-row input:focus { box-shadow: none; }
+.otp-row { gap: 8px; }.otp-row input { min-width: 0; }
+.otp-button { flex: 0 0 auto; height: 38px; padding: 0 12px; border: 1px solid var(--green); border-radius: 6px; background: #fff; color: var(--green); font-size: 12px; font-weight: 600; }
+.otp-button:hover { background: #eaf5f1; }.otp-help { margin: -5px 0 2px; color: var(--muted); font-size: 11px; line-height: 1.4; }
