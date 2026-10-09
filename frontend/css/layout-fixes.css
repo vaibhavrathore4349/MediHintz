@@ -1,0 +1,11 @@
+/* Final layout corrections loaded after each page stylesheet. */
+.trust-screen{padding-bottom:58px}.trust-privacy{width:min(1010px,calc(100% - 48px));margin:0 auto;border-radius:8px;overflow:hidden}.trust-privacy>div{width:min(560px,calc(100% - 48px));padding:48px 0}
+.emergency-hero{min-height:320px}.emergency-hero>img{height:270px;object-position:center 35%;background:#edf3f1}
+@media(max-width:720px){.trust-privacy{width:calc(100% - 32px)}.trust-privacy>div{padding:40px 0}}
+
+/* Keep all triage result cards equal; the shared .emergency utility must not resize Red. */
+.how-levels .routine,.how-levels .priority,.how-levels .emergency{display:block!important;align-self:start!important;width:auto!important;height:260px!important;min-height:260px!important;margin:0!important;padding:25px!important}.how-levels .emergency{background:#fff!important;color:inherit!important;justify-content:initial!important;align-items:initial!important}.how-levels .emergency>div{display:block!important}
+
+/* Make both emergency actions a consistent button pair. */
+.emergency-copy>div{align-items:center}.call-ambulance,.emergency-copy>div>button{width:190px;height:62px;box-sizing:border-box}.call-ambulance{flex-direction:row;gap:9px}.call-ambulance small{font-size:0}.call-ambulance small:after{content:"CALL AMBULANCE";font-size:9px}.call-ambulance b{margin:0;font-size:18px}.emergency-copy>div>button{align-self:auto;font-size:11px}
+@media(max-width:520px){.emergency-copy>div{flex-direction:column;align-items:stretch}.call-ambulance,.emergency-copy>div>button{width:100%}}

@@ -1,0 +1,5 @@
+/* Shared readability scale. Page-specific visual styles remain in their own files. */
+header{font-size:14px}.site-footer{font-size:13px}.site-footer p{font-size:12px}.site-footer b{font-size:13px}
+.care-screen,.trust-screen,.how-screen,.emergency-screen{font-size:16px}.care-intro>p{font-size:14px}.care-trust span,.care-checkin{font-size:12px}.care-talk small,.care-talk em{font-size:12px}.care-quick b,.care-path button,.care-path>p{font-size:11px}.care-quick small,.care-title a,.care-person button,.care-place b{font-size:10px}.care-place small,.care-place em{font-size:9px}.care-banner p{font-size:12px}.care-banner button{font-size:11px}
+.trust-hero p,.trust-can>p,.trust-limits>div>p{font-size:13px}.trust-cards h3{font-size:13px}.trust-cards p,.trust-limits li strong{font-size:11px}.trust-limits li small,.trust-limits aside p{font-size:10px}.trust-privacy p{font-size:12px}.trust-disclaimer p{font-size:11px}
+.how-hero p,.how-results>p{font-size:13px}.how-levels p,.how-levels ul{font-size:11px}.how-ready p{font-size:11px}.emergency-copy>p{font-size:14px}.seek-help>p{font-size:11px}.emergency-cards ul{font-size:10px}

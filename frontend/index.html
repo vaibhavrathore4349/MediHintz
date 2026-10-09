@@ -9,12 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/care-path.css">
+    <link rel="stylesheet" href="css/trust.css">
+    <link rel="stylesheet" href="css/how-it-works.css">
+    <link rel="stylesheet" href="css/emergency.css">
+    <link rel="stylesheet" href="css/type-scale.css">
+    <link rel="stylesheet" href="css/layout-fixes.css">
+    <link rel="stylesheet" href="css/privacy-policy.css">
+    <link rel="stylesheet" href="css/terms-of-service.css">
 </head>
 
 <body>
     <header><a class="brand" href="#home" data-view="home"><img src="assets/logo.png" alt="">MediHintz</a>
-        <nav><a>How it Works</a><a>Care Paths</a><a>Trust</a><a>Emergency</a></nav>
-        <div><button class="header-link" type="button" data-view="login">Login</button><button type="button" data-view="signup">Join now</button></div>
+        <nav><a href="#how" data-view="how">How it Works</a><a href="#care" data-view="care">Care Paths</a><a
+                href="#trust" data-view="trust">Trust</a><a href="#emergency" data-view="emergency">Emergency</a></nav>
+        <div><button class="header-link" type="button" data-view="login">Login</button><button type="button"
+                data-view="signup">Join now</button></div>
     </header>
     <main id="home-screen" class="screen-target active">
         <section class="hero"><img src="assets/home.png" alt="Older woman using her phone">
@@ -36,7 +46,8 @@
         <section class="about section"><img src="assets/home2.png" alt="Nurse with patient">
             <div>
                 <h2>About MediHintz</h2>
-                <p>We are on a mission to democratize healthcare access through empathetic, AI-driven triage and seamless connection to certified professionals.</p>
+                <p>We are on a mission to democratize healthcare access through empathetic, AI-driven triage and
+                    seamless connection to certified professionals.</p>
                 <div class="values">
                     <div><i>⚚</i><b>Accessibility</b><small>Care for everyone, everywhere.</small></div>
                     <div><i>▣</i><b>Privacy</b><small>Your data is secure and yours.</small></div>
@@ -51,7 +62,8 @@
             <div class="expert-inner"><img src="assets/home3.jpg" alt="Doctor showing care information">
                 <div><span class="eyebrow">AI WITH A HUMAN HEART</span>
                     <h2>The perfect blend of AI<br>speed and Human<br>expertise.</h2>
-                    <p>Our platform uses advanced voice AI to understand you instantly, and every care path is shaped by real clinical guidance and best practices.</p>
+                    <p>Our platform uses advanced voice AI to understand you instantly, and every care path is shaped by
+                        real clinical guidance and best practices.</p>
                     <ul>
                         <li><i>▣</i><b>Built With Clinical Input</b><span>Designed alongside healthcare guidance best
                                 practices.</span></li>
@@ -144,14 +156,6 @@
             </details>
         </section>
     </main>
-    <footer id="home-footer" class="site-footer screen-target active">
-        <div><a class="brand" href="#"><img src="assets/logo.png" alt="">MediHintz</a>
-            <p>© 2026 MediHintz. All rights reserved.</p>
-        </div>
-        <div><b>Experience</b><a>How it works</a><a>Care plans</a><a>Health topics</a></div>
-        <div><b>Account</b><button type="button" data-view="signup">Create account</button><button type="button" data-view="login">Log in</button><a>Contact us</a></div>
-    </footer>
-
     <main id="signup-screen" class="page-shell screen-target">
         <section class="signup-card" aria-label="MediHintz create account page">
             <section class="form-panel">
@@ -159,7 +163,8 @@
                     <button class="back-link" type="button" data-view="home" aria-label="Go back to homepage"><span
                             aria-hidden="true">←</span> Back</button>
                     <h1>Create an Account</h1>
-                    <p class="signin-copy">Already have an account? <button class="text-link" type="button" data-view="login">Log in</button></p>
+                    <p class="signin-copy">Already have an account? <button class="text-link" type="button"
+                            data-view="login">Log in</button></p>
                     <form id="signupForm" novalidate>
                         <div class="name-row">
                             <label class="input-group"><span>First Name</span><input id="firstName" type="text"
@@ -167,9 +172,16 @@
                             <label class="input-group"><span>Last Name</span><input id="lastName" type="text"
                                     placeholder="Doe" autocomplete="family-name" required /></label>
                         </div>
-                        <label class="input-group"><span>Phone Number</span><span class="phone-row"><span class="country-code">+91</span><input id="signupPhone" type="tel" inputmode="numeric" placeholder="98765 43210" autocomplete="tel" required /></span></label>
-                        <label class="input-group"><span>One-Time Password</span><span class="otp-row"><input id="signupOtp" type="text" inputmode="numeric" maxlength="6" placeholder="Enter 6-digit OTP" required /><button class="otp-button" id="sendSignupOtp" type="button">Send OTP</button></span></label>
-                        <label class="terms"><input id="signupTerms" type="checkbox" /><span>I agree to the <a href="#">Terms
+                        <label class="input-group"><span>Phone Number</span><span class="phone-row"><span
+                                    class="country-code">+91</span><input id="signupPhone" type="tel"
+                                    inputmode="numeric" placeholder="98765 43210" autocomplete="tel"
+                                    required /></span></label>
+                        <label class="input-group"><span>One-Time Password</span><span class="otp-row"><input
+                                    id="signupOtp" type="text" inputmode="numeric" maxlength="6"
+                                    placeholder="Enter 6-digit OTP" required /><button class="otp-button"
+                                    id="sendSignupOtp" type="button">Send OTP</button></span></label>
+                        <label class="terms"><input id="signupTerms" type="checkbox" /><span>I agree to the <a
+                                    href="#">Terms
                                     of Service</a> and <a href="#">Privacy Policy</a></span></label>
                         <button class="create-button" type="submit">Create Account</button>
                         <p class="form-message" id="signupMessage" role="status"></p>
@@ -198,9 +210,17 @@
             <section class="form-panel">
                 <div class="form-content"><button class="back-link" type="button" data-view="home">← Back</button>
                     <h1>Welcome back</h1>
-                    <p class="signin-copy">New to MediHintz? <button class="text-link" type="button" data-view="signup">Create an account</button></p>
-                    <form id="loginForm"><label class="input-group"><span>Phone Number</span><span class="phone-row"><span class="country-code">+91</span><input id="loginPhone" type="tel" inputmode="numeric" placeholder="98765 43210" autocomplete="tel" required></span></label><label
-                            class="input-group"><span>One-Time Password</span><span class="otp-row"><input id="loginOtp" type="text" inputmode="numeric" maxlength="6" placeholder="Enter 6-digit OTP" required><button class="otp-button" id="sendLoginOtp" type="button">Send OTP</button></span></label><p class="otp-help">We’ll send a verification code to your mobile number.</p><button class="create-button" type="submit">Verify &amp; Log In</button>
+                    <p class="signin-copy">New to MediHintz? <button class="text-link" type="button"
+                            data-view="signup">Create an account</button></p>
+                    <form id="loginForm"><label class="input-group"><span>Phone Number</span><span
+                                class="phone-row"><span class="country-code">+91</span><input id="loginPhone" type="tel"
+                                    inputmode="numeric" placeholder="98765 43210" autocomplete="tel"
+                                    required></span></label><label class="input-group"><span>One-Time
+                                Password</span><span class="otp-row"><input id="loginOtp" type="text"
+                                    inputmode="numeric" maxlength="6" placeholder="Enter 6-digit OTP" required><button
+                                    class="otp-button" id="sendLoginOtp" type="button">Send OTP</button></span></label>
+                        <p class="otp-help">We’ll send a verification code to your mobile number.</p><button
+                            class="create-button" type="submit">Verify &amp; Log In</button>
                         <p class="form-message" id="loginMessage"></p>
                     </form>
                 </div>
@@ -216,9 +236,250 @@
         </section>
     </main>
 
+    <main id="care-screen" class="care-screen screen-target">
+        <section class="care-wrap">
+            <div class="care-intro">
+                <h1>Hello <span aria-hidden="true">👋</span> How can MediHintz help<br>you today?</h1>
+                <p>We’re here to guide your care. Speak or type your concerns to get started.</p>
+                <div class="care-trust"><span>✦ Your data stays private</span><span>✦ Built on WHO health
+                        guidelines</span><span>✦ Works in low connectivity</span></div>
+            </div>
+            <div class="care-checkin"><i></i><span>Last check-in: Mild fever — 2 days ago, marked Green</span><button
+                    type="button">View history</button></div>
+            <section class="care-action-grid">
+                <button class="care-talk" type="button"><span class="care-mic">●</span><b>Speak to
+                        MediHintz</b><small>Describe how you’re feeling in your own words, and we’ll help<br>you find
+                        the right next steps.</small><em>⌨ &nbsp; Type instead</em></button>
+                <div class="care-quick-links">
+                    <button class="care-quick care-emergency" type="button"><i>✦</i><span><b>Emergency
+                                Help</b><small>Get immediate assistance</small></span><strong>›</strong></button>
+                    <button class="care-quick" type="button"><i>♡</i><span><b>Check Symptoms</b><small>Start an
+                                assessment</small></span><strong>›</strong></button>
+                    <button class="care-quick" type="button"><i>⌕</i><span><b>Find Healthcare</b><small>Doctors &amp;
+                                Clinics</small></span><strong>›</strong></button>
+                    <button class="care-quick" type="button"><i>▣</i><span><b>Learn About Health</b><small>Articles
+                                &amp; resources</small></span><strong>›</strong></button>
+                </div>
+            </section>
+            <section class="care-path">
+                <p>Your Path to Care</p>
+                <div><button class="selected" type="button"><i>✦</i> Speak/Type <b>→</b></button><button
+                        type="button"><i>⌘</i> Get Guidance <b>→</b></button><button type="button"><i>⌂</i> Find
+                        Care</button></div>
+            </section>
+            <section class="care-tools">
+                <article>
+                    <h2>Checking for someone else?</h2>
+                    <div class="care-person"><button class="selected" type="button">Myself</button><button
+                            type="button">Child</button><button type="button">Parent</button><button
+                            type="button">Someone else</button></div>
+                </article>
+                <article>
+                    <div class="care-title">
+                        <h2>Nearby Healthcare</h2><a href="#">View Map</a>
+                    </div>
+                    <div class="care-place"><i>⌂</i>
+                        <p><b>Aarogya Clinic</b><small>General Practitioner</small></p><em>1.2 km</em>
+                    </div>
+                    <div class="care-place"><i>✚</i>
+                        <p><b>City Health Center</b><small>Primary Care</small></p><em>3.5 km</em>
+                    </div>
+                </article>
+            </section>
+            <section class="care-banner"><img src="assets/care path.png"
+                    alt="Healthcare professional supporting an older patient">
+                <div>
+                    <h2>Accessible Care for Everyone</h2>
+                    <p>Our platform is designed to be intuitive and helpful, bringing the gap<br>between you and quality
+                        healthcare, wherever you are.</p><button type="button">Learn about our mission
+                        <span>→</span></button>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <main id="trust-screen" class="trust-screen screen-target">
+        <section class="trust-hero trust-wrap">
+            <div><span class="trust-tag">OUR COMMITMENT</span>
+                <h1>Trust &amp;<br>Transparency</h1>
+                <p>MediHintz is built on a foundation of clinical safety, user privacy, and honest communication—because
+                    your health journey deserves clarity and trust.</p>
+            </div>
+            <img src="assets/trust.jpg" alt="Healthcare professional speaking with a patient">
+        </section>
+        <section class="trust-can trust-wrap">
+            <h2>What MediHintz Can Do</h2>
+            <p>We provide helpful guidance for your health journey.</p>
+            <div class="trust-cards">
+                <article><i>●</i>
+                    <h3>Symptom Guidance</h3>
+                    <p>Understand common symptoms and get clear next-step guidance to support your care journey.</p>
+                </article>
+                <article><i>▲</i>
+                    <h3>Urgency Assessment</h3>
+                    <p>Helps you understand whether your concern may need urgent, routine, or self-care support.</p>
+                </article>
+                <article><i>▣</i>
+                    <h3>Health Education</h3>
+                    <p>Provides trustworthy information to help you learn, prepare, and make informed choices.</p>
+                </article>
+            </div>
+        </section>
+        <section class="trust-limits trust-wrap">
+            <div>
+                <h2>What MediHintz Cannot Do</h2>
+                <p>We are a guide, not a replacement for a doctor. Here’s what MediHintz will never do:</p>
+                <ul>
+                    <li><b>✕</b><span><strong>No Medical Diagnosis</strong><small>We help you understand symptoms, not
+                                diagnose conditions.</small></span></li>
+                    <li><b>✕</b><span><strong>No Prescriptions</strong><small>We don’t recommend medicines, dosages, or
+                                professional treatments.</small></span></li>
+                    <li><b>✕</b><span><strong>Not for Emergencies</strong><small>For emergencies, contact a doctor or
+                                emergency services immediately.</small></span></li>
+                </ul>
+            </div>
+            <aside><i>✓</i>
+                <h3>Safety First</h3>
+                <p>MediHintz encourages informed choices and supports proper care when needed.</p>
+            </aside>
+        </section>
+        <section class="trust-privacy">
+            <div><span>◉</span>
+                <h2>Your Privacy is Paramount</h2>
+                <p>We believe your health data belongs to you. MediHintz does not store persistent accounts or personal
+                    health histories. Every session is ephemeral, ensuring your inquiries remain completely private and
+                    unlinked to your identity.</p><button type="button">Read Privacy Policy</button>
+            </div>
+        </section>
+</main>
+
+    <main id="how-screen" class="how-screen screen-target">
+        <section class="how-hero how-wrap">
+            <div><span>CLARITY IN MOMENTS OF UNCERTAINTY</span>
+                <h1>Understanding<br>Your Care<br>Needs</h1>
+                <p>We use a simple, color-coded system to help you understand the urgency of your symptoms and guide you
+                    to the right care.</p>
+            </div><img src="assets/how_it_works.jpg" alt="Healthcare professional reviewing information at a desk">
+        </section>
+        <section class="how-results how-wrap">
+            <h2>How to read your results</h2>
+            <p>Our triaging system categorizes your symptoms into three simple levels.</p>
+            <div class="how-levels">
+                <article class="routine"><i>✓</i><em>ROUTINE CARE</em>
+                    <h3>Green</h3>
+                    <p>Your symptoms are mild and typical of common illnesses. Care is recommended, but not urgent.</p>
+                    <ul>
+                        <li>Schedule at your convenience</li>
+                        <li>Primary care physician</li>
+                    </ul>
+                </article>
+                <article class="priority"><i>△</i><em>PRIORITY CARE</em>
+                    <h3>Yellow</h3>
+                    <p>Your symptoms may be of concern and need attention within 24 hours.</p>
+                    <ul>
+                        <li>Visit urgent care clinic</li>
+                        <li>Schedule a telehealth visit</li>
+                    </ul>
+                </article>
+                <article class="emergency"><i>✦</i><em>EMERGENCY</em>
+                    <h3>Red</h3>
+                    <p>Your symptoms require immediate life-threatening care. Seek immediate medical attention now.</p>
+                    <ul>
+                        <li>Go to nearest ER</li>
+                        <li>Call emergency services</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="how-ready">
+            <h2>Ready to understand your<br>symptoms?</h2>
+            <p>Use our intelligent checker to get clear, timely assessment minutes.</p><button type="button"
+                data-view="care">Start Symptom Check&nbsp; →</button>
+        </section>
+    </main>
+
+    <main id="emergency-screen" class="emergency-screen screen-target">
+        <section class="emergency-wrap emergency-hero">
+            <div class="emergency-copy"><span class="emergency-tag">✦ &nbsp; IMMEDIATE ASSISTANCE</span>
+                <h1>Medical<br>Emergency?</h1>
+                <p>If you or someone else is experiencing a severe or life-threatening medical emergency, call for
+                    immediate help.</p>
+                <div><a class="call-ambulance" href="tel:108"><small>CALL AMBULANCE</small><b>☎ &nbsp;108</b></a><button
+                        type="button" data-view="care">▣ &nbsp; Find Emergency Facility</button></div>
+            </div>
+            <img src="assets/emergency.png" alt="Medical professional ready to provide emergency care">
+        </section>
+        <section class="seek-help emergency-wrap">
+            <h2>When to seek emergency<br>help</h2>
+            <p>Do not ignore these critical symptoms. Immediate medical attention is vital.</p>
+            <div class="emergency-cards">
+                <article><i>♡</i>
+                    <h3>Heart Attack</h3>
+                    <ul>
+                        <li>Chest pain, pressure, or tightness</li>
+                        <li>Pain radiating to arm, back, or jaw</li>
+                        <li>Shortness of breath with chest discomfort</li>
+                    </ul>
+                </article>
+                <article><i>✦</i>
+                    <h3>Stroke (FAST)</h3>
+                    <ul>
+                        <li>Face drooping on one side</li>
+                        <li>Arm weakness or numbness</li>
+                        <li>Speech difficulty or slurring</li>
+                    </ul>
+                </article>
+                <article><i>♧</i>
+                    <h3>Breathing Issues</h3>
+                    <ul>
+                        <li>Severe difficulty breathing</li>
+                        <li>Choking or blocked airway</li>
+                        <li>Bluish color to lips or face</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <main id="privacy-screen" class="privacy-screen screen-target">
+        <section class="privacy-wrap">
+            <header class="privacy-heading"><span>◉ &nbsp; LEGAL</span><h1>Privacy Policy</h1><p>Last updated: October 10, 2026</p></header>
+            <article class="privacy-card"><h2><i>◉</i> Introduction</h2><p>Welcome to MediHintz. Your privacy and security are our priorities. This Privacy Policy outlines how we collect, use, and protect your personal and health-related information when you use our services.</p><p>We believe in the highest standards of clinical safety and data protection, ensuring your sensitive information is confidential and used only with your consent.</p></article>
+            <article class="privacy-card"><h2><i>▣</i> Data Collection</h2><p>MediHintz collects only the information needed to provide relevant personal health support. This may include your symptoms, care preferences, and general health context. We never collect unnecessary personal data to improve the service.</p></article>
+            <article class="privacy-card privacy-usage"><h2><i>⌁</i> Data Usage</h2><p>We use your information to:</p><ul><li>Provide clear and secure health-care guidance</li><li>Connect you securely with emergency contacts and healthcare resources</li><li>Maintain system security and prevent fraudulent activity</li></ul><strong>⚠ &nbsp; We never sell your personal data to third parties.</strong></article>
+            <article class="privacy-card"><h2><i>♙</i> Security</h2><p>We use strong security measures and organizational safeguards to protect your data against unauthorized access, alteration, disclosure, or destruction.</p><p>Our systems are reviewed regularly and our commitment to security is ongoing.</p></article>
+            <div class="privacy-back"><button type="button" data-view="home">← &nbsp; Return to Platform</button></div>
+        </section>
+    </main>
+
+    <main id="terms-screen" class="privacy-screen terms-screen screen-target">
+        <section class="privacy-wrap">
+            <header class="privacy-heading"><span>◉ &nbsp; LEGAL</span><h1>Terms of Service</h1><p>Last updated: October 10, 2026</p></header>
+            <article class="privacy-card"><h2>1. Agreement to Terms</h2><p>By accessing or using MediHintz, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not access or use the service.</p><p>We reserve the right to modify these terms at any time. Your continued use after changes are posted constitutes acceptance of the updated terms.</p></article>
+            <article class="privacy-card"><h2>2. Use of Service</h2><p>MediHintz provides health information and care guidance. You agree to use this service only for lawful purposes and in accordance with these terms.</p><ul><li>You must not use the service to harm or mislead others.</li><li>You agree to provide accurate information when seeking support.</li></ul></article>
+            <article class="privacy-card terms-disclaimer"><h2>3. Medical Disclaimer</h2><strong>IMPORTANT NOTICE</strong><p>The information provided on MediHintz is for informational purposes only and is not intended as medical advice or professional medical diagnosis. Always consult a qualified healthcare professional for medical concerns.</p></article>
+            <article class="privacy-card"><h2>4. Limitation of Liability</h2><p>To the maximum extent permitted by applicable law, MediHintz and its affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the service.</p></article>
+            <div class="privacy-back"><button type="button" data-view="home">← &nbsp; Return to Platform</button></div>
+        </section>
+    </main>
+
+    <footer id="home-footer" class="site-footer screen-target active">
+        <div><a class="brand" href="#"><img src="assets/logo.png" alt="">MediHintz</a><p>© 2026 MediHintz. All rights reserved.</p></div>
+        <div><b>Resources</b><a>Emergency Contacts</a><a>Rural Health Initiative</a><a>Clinical Safety</a></div>
+        <div><b>Legal</b><a href="#privacy" data-view="privacy">Privacy Policy</a><a href="#terms" data-view="terms">Terms of Service</a></div>
+        <div><b>Account</b><button type="button" data-view="signup">Create account</button><button type="button" data-view="login">Log in</button><a>Contact us</a></div>
+    </footer>
+    <section id="trust-disclaimer" class="trust-disclaimer screen-target" aria-label="Medical disclaimer"><strong>MEDICAL DISCLAIMER</strong><p>The information provided by MediHintz is for educational and informational purposes only and is not intended as medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. Never disregard professional medical advice or delay in seeking it because of something you have read on this website.</p></section>
+
     <script src="js/homepage.js"></script>
     <script src="js/signup.js"></script>
     <script src="js/signin.js"></script>
+    <script src="js/care-path.js"></script>
+    <script src="js/trust.js"></script>
+    <script src="js/how-it-works.js"></script>
+    <script src="js/emergency.js"></script>
+    <script src="js/privacy-policy.js"></script>
+    <script src="js/terms-of-service.js"></script>
 
 </body>
 
